@@ -1,0 +1,40 @@
+{
+  "name": "simple-graphql-server",
+  "description": "Simple GraphQL Server with Subscriptions in Express",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "flow-bin": "^0.59.0",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.7.4"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.2.0",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "createServer": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-iso-date": "^3.3.0",
+    "graphql-playground-middleware-express": "^1.1.4",
+    "graphql-relay": "^0.5.3",
+    "graphql-subscriptions": "^0.5.5",
+    "mongoose": "^4.13.4",
+    "subscriptions-transport-ws": "^0.9.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "prettier": "prettier --single-quote --trailing-comma all --write 'src/**/*.js'",
+    "typecheck": "flow check --color=always"
+  }
+}
