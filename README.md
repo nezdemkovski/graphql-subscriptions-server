@@ -1,5 +1,7 @@
 # Graphql Subscription server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yakovlevyuri/graphql-subscriptions-server.svg)](https://greenkeeper.io/)
+
 Simple and super scalable GraphQL Subscriptions server with MongoDB as a database. As server middleware has been used [Graphcool Playground](https://github.com/graphcool/graphql-playground) which gives automatic schema reloading and better support for GraphQL Subscriptions.
 
 ## How it works?
