@@ -24,9 +24,7 @@ import {
 const app = express();
 const server = createServer(app);
 
-mongoose.connect(`${MONGO_URI}${MONGO_DATABASE_NAME}`, {
-  useMongoClient: true,
-});
+mongoose.connect(`${MONGO_URI}${MONGO_DATABASE_NAME}`);
 mongoose.Promise = global.Promise;
 
 app.use('*', cors());
@@ -54,10 +52,10 @@ server.listen(PORT, () => {
       schema: Schema,
     },
     {
-      server: server,
+      server,
       path: '/subscriptions',
     },
   );
-  console.log(`GraphQL Server is now running on ${BASE_URI}`);
+  console.log(`GraphQL Server is now running on ${BASE_URI}/graphql`);
   console.log(`Subscriptions are running on ${WS_BASE_URI}/subscriptions`);
 });
